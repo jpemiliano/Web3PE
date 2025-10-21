@@ -1,0 +1,210 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "baterias",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "tipo",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "uso",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tensao",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "dataProd",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "lote",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"name": "consultarBateria",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "tipo",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "uso",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tensao",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "dataProd",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "lote",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "dono",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "tipo",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "uso",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tensao",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "dataProd",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "lote",
+						"type": "string"
+					}
+				],
+				"name": "registrarBateria",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalBaterias",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"registrarBateria(string,string,uint256,string,string)": {
+					"params": {
+						"dataProd": "Data de produção (formato string)",
+						"lote": "Número do lote",
+						"tensao": "Tensão nominal em volts",
+						"tipo": "Tipo da bateria",
+						"uso": "Aplicação da bateria"
+					}
+				}
+			},
+			"title": "Registro de produção de baterias",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"consultarBateria(uint256)": {
+					"notice": "Retorna os dados de uma bateria pelo índice"
+				},
+				"registrarBateria(string,string,uint256,string,string)": {
+					"notice": "Registra uma nova bateria"
+				},
+				"totalBaterias()": {
+					"notice": "Retorna o total de baterias registradas"
+				}
+			},
+			"notice": "Armazena dados de cada bateria produzida pela fábrica.",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ControleBaterias.sol": "RegistroDeBaterias"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ControleBaterias.sol": {
+			"keccak256": "0x5da69a240b0f6e89c376d6d36edd48ca0d9b59af80843c6969be047188158e91",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d276f92d6a0ccfe6300125c3cf5e2e469ad427f501d883c53ef8dee269937331",
+				"dweb:/ipfs/QmfWt3g4PZWc9x7bvkKG7MJPr3g6E7tgqMBwLf2QSGdCHp"
+			]
+		}
+	},
+	"version": 1
+}
